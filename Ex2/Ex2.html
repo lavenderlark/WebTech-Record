@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Jewels</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Google Fonts for modern font -->
+    <!-- External CSS -->
+    <style>
+        /* Internal CSS */
+        
+        .header {
+            background: #1F2544;
+            color: #FFD0EC;
+            padding: 20px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .logo{
+            width: 100px;
+            height:auto;
+            position:absolute;
+            right:100px;
+            top:30px;
+            border-radius: 50%;
+            object-fit: contain;
+
+        }
+        .back-to-index {
+            position: absolute;
+            left: 90px; /* Adjusted to bring it closer to the edge */
+            top: 25%; /* Centered vertically */
+            transform: translateY(-50%);
+            background-color: #FFD0EC;
+            color: #1F2544;
+            padding: 3px 8px; /* Smaller padding */
+            font-size: 0.8em; /* Smaller text size */
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s;
+        }        
+        .back-to-index:hover {
+            background-color: #ee99cc;
+            color: #1F2544;
+        }
+        /* Make the Back to Index button responsive */
+        @media (max-width: 768px) {
+            .back-to-index {
+                left: 45px;
+                top: 25%;
+                padding: 2px 6px; 
+                font-size: 0.7em; 
+            }
+
+            .logo {
+                width: 85px; 
+                right: 50px;
+                top: 35px;
+            }
+
+            .modest-glow {
+                font-size: 3em; 
+            }
+        }
+        .nav-bar {
+            background: #1F2544;
+            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav-bar a {
+            color: #FFD0EC;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .nav-bar a:hover {
+            color: #85466a;
+        }
+        
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #a281c8;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .modest-glow {
+            font-family: 'Playfair Display', serif;
+            color: #1F2544;
+            font-size: 4em;
+            margin-bottom: 0;
+        }
+        
+        footer {
+            background-color: #1F2544;
+            color: #FFD0EC;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+        <a href="../index.html" class="back-to-index">Back to Index</a>
+        <!-- Back to Index Button -->
+         <img src="../images/Modest logo2.png" alt="Exquisite Jewels Logo" class="logo">
+            <h1 class="modest-glow">Modest Glow</h1>
+            <!-- Elegant modern font for Modest Glow -->
+            <nav class="nav-bar">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2 style="color: #1F2544;">Our Latest Collection</h2>
+            <!-- Inline CSS -->
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="../images/Australian Opal.jpg" alt="Australian Opal Necklace">
+                    <div class="product-info">
+                        <h2>Australian Opal Jewellery</h2>
+                        <p>The stunning Australian semi-black opal necklace, handcrafted in 9ct yellow gold, showcases the opal’s vibrant play of colors</p>
+                        <a href="https://worldtreasuredesigns.com/product/blue-green-australian-black-opal-pendant-necklace-marlee/">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/European Diamond.webp" alt="European Diamond Ring">
+                    <div class="product-info">
+                        <h2>European Diamond Jewellery</h2>
+                        <p>The exquisite diamond ring features a brilliant round-cut European diamond with a halo of smaller diamonds.</p>
+                        <a href="https://european.ca/products/tacori-petite-crescent-18k-white-gold-diamond-engagement-ring?variant=37265145692309">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Japanese Akoya.webp" alt="Japanese Akoya Bracelet">
+                    <div class="product-info">
+                        <h2>Japanese Akoya Jewellery</h2>
+                        <p>The Japanese Akoya pearl bracelet is an elegant piece of jewellery known for its lustrous pearls, cultivated in the Akoya oysters native to Japan</p>
+                        <a href="https://www.pearls.jp/product/hestia-japanese-akoya-aaa-necklace-7-5x8mm/">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Russian Amber2.webp" alt="Russian Amber Pendant">
+                    <div class="product-info">
+                        <h2>Russian Amber Jewellery</h2>
+                        <p>The Little Fairy Earrings were hand crafted by Russian artisans with visible inclusions, characteristic of natural amber.</p>
+                        <a href="https://www.therussianstore.com/products/amber-silver-little-fairy-earrings">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Indian Nath.webp" alt="Indian Nose Ring">
+                    <div class="product-info">
+                        <h2>Indian Nath Jewellery</h2>
+                        <p> The Nath is crafted from silver,gold or a combination of both, adorned with intricate designs and embellished with gemstones.</p>
+                        <a href="https://aadyaa.com/products/silver_nosepin_kundan_silver_oxidized_4">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Middle Eastern Bedouni.webp" alt="Middle Eastern Bedouin Necklace">
+                    <div class="product-info">
+                        <h2>Middle Eastern Bedouin Jewellery</h2>
+                        <p>The Yemeni Bedouin necklace features intricate silverwork and vibrant gemstones, reflecting traditional craftsmanship and cultural heritage.</p>
+                        <a href="https://www.kannour.com/product/yemeni-bedouin-old-necklace/?srsltid=AfmBOopny01t53P3jIgQvdvt-m3jCpHSK7qP00aUJg8dXyP-EGomIC63HeA">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Thailand Ruby.webp" alt="Thailand Red Spinel Necklace">
+                    <div class="product-info">
+                        <h2> Thai Red Spinel Jewellery</h2>
+                        <p>The Thai red spinel necklace is a captivating piece of jewellery showcasing the fiery red spinel, a gemstone renowned for its brilliance.</p>
+                        <a href="https://gemsrush.in/products/scarlet-elegance-red-spinel-smooth-rondelle-necklace?variant=44818788253941&currency=INR&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&utm_source=googleads&utm_medium=cpc&utm_campaign=21139124295&utm_term=&utm_content={creatives}&gad_source=1&gclid=CjwKCAjw59q2BhBOEiwAKc0ijdVeEeDnVYh0UtsZ6FrPuezkf2SK4CEfc0-dqbQpBPHXTWeACAN7-hoCkbgQAvD_BwE">View More</a>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../images/Chinese Jade.jpg" alt="Chinese Jade Bangle">
+                    <div class="product-info">
+                        <h2>Chinese Jade Jewellery</h2>
+                        <p>The Chinese jade bangle is a refined piece of jewellery crafted from smooth, polished jade, without a clasp symbolizing purity and status.</p>
+                        <a href="https://www.amazon.in/Zimlove-Classcial-Bracelets-Handcrafted-59mm-61mm/dp/B07V4WQYY7?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A2BWJVKSWP7TR2">View More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Exquisite Jewels. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

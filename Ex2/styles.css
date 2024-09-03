@@ -1,0 +1,86 @@
+/* Resetting default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* General body styling */
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #1F2544;
+    color: #333;
+}
+
+
+/* Product grid styling */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+
+/* Product card styling */
+
+.product-card {
+    border: 2px solid #1F2544 ;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #FFD0EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+    width: 80%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.product-info {
+    padding: 15px;
+    text-align: center;
+    background-color: #FFD0EC;
+    width: 100%;
+}
+
+.product-info h2 {
+    color: #1F2544;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #333;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.product-info a {
+    color: #1F2544;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #1F2544;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.product-info a:hover {
+    color: #fff;
+    background-color: #1F2544;
+}
