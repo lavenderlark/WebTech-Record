@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exquisite Jewels</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            background-color: #151515; /* Dark royal background */
+            color: #e0e0e0; /* Light text color */
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1F2544, #C79BDB); /* Royal blue to soft pink gradient */
+            color: white;
+            padding: 40px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .btn-light {
+            background-color: #C79BDB; /* Soft lavender background */
+            color: #1F2544; /* Deep royal text color */
+            border: 2px solid #1F2544; /* Royal blue border */
+            border-radius: 30px;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        .btn-light:hover {
+            background-color: #1F2544; /* Deep royal background on hover */
+            color: #FFD0EC; /* Light text color on hover */
+            border-color: #FFD0EC; /* Light border on hover */
+        }
+
+        .logo {
+            width: 130px;
+            height: auto;
+        }
+
+        .navbar a {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .navbar a:hover {
+            color: #FFD0EC; /* Light accent color */
+        }
+
+        .modest-glow {
+            font-family: 'Playfair Display', serif;
+            font-size: 4em;
+            color: #1F2544;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            margin: 30px 0;
+        }
+
+        .collection-title {
+            font-size: 2.8em;
+            font-weight: 600;
+            color: #C79BDB; /* Soft lavender accent */
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .form-control {
+            border: 2px solid #C79BDB; /* Soft lavender border */
+            border-radius: 15px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background-color: #1f1f1f; /* Dark background for input fields */
+            color: #FFD0EC; /* Light text color */
+        }
+
+        .form-control:focus {
+            border-color: #1F2544; /* Deep royal blue on focus */
+            box-shadow: 0 0 5px rgba(199, 155, 219, 0.7); /* Soft glow effect */
+        }
+
+        .btn-submit {
+            background-color: #C79BDB; /* Soft lavender background */
+            color: #1F2544; /* Deep royal text color */
+            border: none; /* No border */
+            border-radius: 30px;
+            padding: 12px 20px;
+            font-size: 1.1em;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: #1F2544; /* Deep royal background on hover */
+            color: #FFD0EC; /* Light text color on hover */
+        }
+
+        .form-group label {
+            color: #1F2544; /* Label color */
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: #1F2544;
+            color: #FFD0EC;
+            padding: 40px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            color: #FFD0EC;
+            font-size: 1.7em;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #853ca9; /* Gold on hover for icons */
+        }
+
+        @media (max-width: 768px) {
+            .modest-glow {
+                font-size: 3em;
+            }
+
+            .collection-title {
+                font-size: 2.3em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <img src="../images/Modest logo2.png" alt="Exquisite Jewels Logo" class="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item">
+                            <a href="../index.html" class="btn btn-light ml-3">Back to Index</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="modest-glow">Modest Glow</h1>
+        </div>
+    </header>
+
+    <!-- Jewelry Inquiry Form -->
+<div class="container my-5">
+    <h2 class="collection-title">Jewelry Inquiry Form</h2>
+    <form id="jewelryInquiryForm" class="p-4 rounded shadow-lg" style="background: linear-gradient(135deg, #C79BDB, #1F2544); border-radius: 20px;">
+        <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required placeholder="Enter your phone number">
+        </div>
+		<div class="form-group">
+			<label for="jewelryType" class="form-label">Preferred Jewelry Type</label>
+			<select class="form-control" id="jewelryType" required>
+				<option value="">Select...</option>
+				<option value="necklace">Necklace</option>
+				<option value="ring">Ring</option>
+				<option value="bracelet">Bracelet</option>
+				<option value="earrings">Earrings</option>
+				<option value="other">Other</option>
+			</select>
+			<!-- Hidden text input for 'Other' jewelry type -->
+			<input type="text" class="form-control mt-2" id="jewelryTypeOther" placeholder="Specify other jewelry type" style="display: none;">
+		</div>
+		
+
+        <!-- Material Selection -->
+        <div class="form-group">
+            <label for="material" class="form-label">Preferred Material</label>
+            <select class="form-control" id="material" required>
+                <option value="">Select...</option>
+                <option value="gold">Gold</option>
+                <option value="silver">Silver</option>
+                <option value="platinum">Platinum</option>
+                <option value="rose_gold">Rose Gold</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- Hidden text input for 'Other' material -->
+            <input type="text" class="form-control mt-2" id="materialOther" placeholder="Specify other material" style="display: none;">
+        </div>
+
+        <!-- Gemstone Selection -->
+        <div class="form-group">
+            <label for="gemstone" class="form-label">Preferred Gemstone</label>
+            <select class="form-control" id="gemstone" required>
+                <option value="">Select...</option>
+                <option value="diamond">Diamond</option>
+                <option value="ruby">Ruby</option>
+                <option value="emerald">Emerald</option>
+                <option value="sapphire">Sapphire</option>
+                <option value="opal">Opal</option>
+                <option value="topaz">Topaz</option>
+                <option value="pearl">Pearl</option>
+                <option value="other">Other</option>
+            </select>
+            <!-- Hidden text input for 'Other' gemstone -->
+            <input type="text" class="form-control mt-2" id="gemstoneOther" placeholder="Specify other gemstone" style="display: none;">
+        </div>
+
+        <!-- Size Input -->
+        <div class="form-group">
+            <label for="size" class="form-label">Size</label>
+            <input type="text" class="form-control" id="size" required placeholder="Enter size (e.g., ring size, necklace length)">
+        </div>
+
+        <!-- Design Preferences -->
+        <div class="form-group">
+            <label for="design" class="form-label">Preferred Design</label>
+            <textarea class="form-control" id="design" rows="3" placeholder="Describe your preferred design"></textarea>
+        </div>
+
+        <!-- Comments -->
+        <div class="form-group">
+            <label for="comments" class="form-label">Additional Comments/Requests</label>
+            <textarea class="form-control" id="comments" rows="3" placeholder="Enter your comments or requests"></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-submit mt-3">Submit Inquiry</button>
+        <div id="formResponse" class="mt-3"></div>
+    </form>
+</div>
+
+<!-- JavaScript for Dynamic Other Input Fields -->
+<script>
+    document.getElementById('material').addEventListener('change', function () {
+        var materialOther = document.getElementById('materialOther');
+        if (this.value === 'other') {
+            materialOther.style.display = 'block';
+            materialOther.required = true;
+        } else {
+            materialOther.style.display = 'none';
+            materialOther.required = false;
+        }
+    });
+
+    document.getElementById('gemstone').addEventListener('change', function () {
+        var gemstoneOther = document.getElementById('gemstoneOther');
+        if (this.value === 'other') {
+            gemstoneOther.style.display = 'block';
+            gemstoneOther.required = true;
+        } else {
+            gemstoneOther.style.display = 'none';
+            gemstoneOther.required = false;
+        }
+	
+	
+    });
+
+	document.getElementById('jewelryType').addEventListener('change', function () {
+		var jewelryTypeOther = document.getElementById('jewelryTypeOther');
+		if (this.value === 'other') {
+			jewelryTypeOther.style.display = 'block';
+			jewelryTypeOther.required = true;
+		} else {
+			jewelryTypeOther.style.display = 'none';
+			jewelryTypeOther.required = false;
+		}
+	});
+
+    document.getElementById('jewelryInquiryForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+        document.getElementById('formResponse').innerHTML = "Thank you for your inquiry. We will get back to you shortly!";
+        document.getElementById('jewelryInquiryForm').reset(); // Reset form after submission
+    });
+</script>
+	
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Exquisite Jewels. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#" class="bi bi-facebook"></a>
+                <a href="#" class="bi bi-instagram"></a>
+                <a href="#" class="bi bi-twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Internal JS for form -->
+    <script>
+        document.getElementById('jewelryInquiryForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            document.getElementById('formResponse').innerHTML = "Thank you for your inquiry. We will get back to you shortly!";
+            document.getElementById('jewelryInquiryForm').reset(); // Reset form after submission
+        });
+    </script>
+</body>
+
+</html>
