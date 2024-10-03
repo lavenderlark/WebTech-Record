@@ -8,83 +8,100 @@
 /* General body styling */
 body {
     font-family: 'Georgia', serif;
-    background-color: #1F2544;
-    color: #F3F4F6;
+    background-color: #1F2544; /* Dark blue background */
+    color: #F3F4F6; /* Light gray text */
     line-height: 1.6;
-}
-
-/* Product grid styling */
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 30px;
-}
-
-/* Product card styling */
-.product-card {
-    border: 1px solid #FFD0EC;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    background-color: #FFD0EC;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
 }
 
-.product-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+/* Header styling */
+h1 {
+    font-size: 2.5em;
+    color: #FFD0EC; /* Light pink header text */
+    text-shadow: 2px 2px 4px #FFD700; /* Soft gold shadow */
+    margin-bottom: 20px;
 }
 
-.product-card img {
-    width: 90%;
-    height: auto;
-    margin: 15px 0;
-}
-
-.product-info {
-    padding: 15px;
-    text-align: center;
-    background-color: #FFD0EC;
-    width: 100%;
-}
-
-.product-info h2 {
-    color: #1F2544;
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.product-info p {
-    color: #333;
-    font-size: 1em;
-    margin-bottom: 15px;
-}
-
-.product-info a {
-    color: #FFD0EC;
-    background-color: #1F2544;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
+/* Time button styling */
+.time-btn {
+    font-size: large;
     padding: 10px 20px;
-    border: 2px solid #1F2544;
-    border-radius: 25px;
+    background-color: #FFD0EC; /* Light pink background */
+    border: none;
+    border-radius: 5px;
+    color: #1F2544; /* Dark blue text */
     transition: background-color 0.3s, color 0.3s;
 }
 
-.product-info a:hover {
-    color: #1F2544;
-    background-color: #FFD0EC;
+.time-btn:hover {
+    background-color: #1F2544; /* Dark blue hover effect */
+    color: #FFD0EC; /* Light pink text */
 }
 
-/* Footer styling */
-footer {
-    background-color: #1F2544;
-    color: #FFD0EC;
-    padding: 20px;
+/* Box and hover effects */
+.box {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.hover-paragraph:hover {
+    transform: translateY(-5px);
+}
+
+/* Image container and hover effects */
+.image-container {
+    position: relative;
+    text-align: center;
+}
+
+#hoverImage {
+    border-radius: 10%;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+#hoverText {
+    display: none;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+.image-container:hover {
+    transform: translateY(10px);
+}
+
+/* Back to Index button styling */
+.back-to-index {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.back-btn {
+    font-size: large;
+    padding: 10px 20px;
+    background-color: #FFD0EC; /* Light pink background */
+    color: #1F2544; /* Dark blue text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #1F2544; /* Dark blue hover effect */
+    color: #FFD0EC; /* Light pink text */
+}
+
+/* Styling for time display */
+#timeDisplay {
+    font-size: 2rem;
+    background-color: #FFD0EC; /* Light pink background */
+    color: #1F2544; /* Dark blue text */
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
