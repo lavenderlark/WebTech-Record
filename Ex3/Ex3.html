@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -17,14 +16,14 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" href="style.css">
-
     <!-- Internal CSS -->
     <style>
         body {
             font-family: 'Raleway', sans-serif;
             background-color: #1b1b1b; /* Dark background */
             color: #e0e0e0; /* Light text color */
+            margin: 0;
+            padding: 0;
         }
 
         .header {
@@ -32,11 +31,38 @@
             color: white;
             padding: 20px 0;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            top: 0;
+            width: 100%;
+            z-index: 1020; /* Ensure header stays on top */
         }
-        
+
+        /* Full-width container for the navbar */
+        .navbar {
+            width: 100%;
+        }
+
+        .navbar .container-fluid {
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .navbar-toggler {
+            border-color: #FFB6C1; /* Toggler border color */
+        }
+
+        .navbar-nav {
+            flex-direction: row; /* Align navbar items horizontally */
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 20px; /* Optional margin between navbar items */
+        }
+
         .btn-light {
             background-color: #1F2544; /* Light pink background */
-            color: #1F2544; /* Dark text color */
+            color: #FFD0EC;/* Dark text color */
             border: 2px solid #1F2544; /* Dark border */
             border-radius: 20px;
             padding: 10px 15px;
@@ -45,9 +71,9 @@
         }
 
         .btn-light:hover {
-            background-color: #1F2544; /* Dark background on hover */
-            color: #FFD0EC; /* Light text color on hover */
-            border-color: #FFD0EC; /* Light border on hover */
+            background-color: #1F2544;
+            color: #FFD0EC;
+            border-color: #FFD0EC;
         }
 
         .logo {
@@ -55,24 +81,20 @@
             height: auto;
         }
 
-        .navbar a {
-            color: #fff;
-            transition: color 0.3s;
-        }
-
-        .navbar a:hover {
-            color: #FFD0EC; /* Light accent color */
+        .modest-glow {
+        font-family: 'Playfair Display', serif;
+        font-size: 4em;
+        text-align: center;
+        margin: 20px 0;
+        background: linear-gradient(135deg, #FFD0EC, #FFB6C1);
+        background-clip: text; 
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .modest-glow {
-            font-family: 'Playfair Display', serif;
-            font-size: 4em;
-            text-align: center;
-            margin: 20px 0;
-            background: linear-gradient(135deg, #FFD0EC, #FFB6C1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+            color: #FFD0EC;  /* Fallback text color */
         }
 
         .collection-title {
@@ -115,13 +137,12 @@
         .card-title {
             font-weight: 600;
             margin-bottom: 15px;
-            color: #FFD0EC; /* Light title color */
-            font-size: 1.5em; /* Increased font size */
-        }
+            color: #FFD0EC; 
+            font-size: 1.5em;         }
 
         .card-text {
             margin-bottom: 20px;
-            font-size: 0.9em; /* Slightly smaller text */
+            font-size: 0.9em; 
         }
 
         .card-link {
@@ -131,7 +152,7 @@
             padding: 10px 20px;
             transition: background-color 0.3s, color 0.3s;
             text-decoration: none;
-            display: inline-block; /* Center the button */
+            display: inline-block; 
         }
 
         .card-link:hover {
@@ -142,9 +163,14 @@
         footer {
             background-color: #1F2544;
             color: #FFD0EC;
-            padding: 20px;
+            padding: 20px 0; 
             text-align: center;
+            width: 100%;
+            position: relative;
+            bottom: 0; 
+            left: 0; 
         }
+
 
         .social-icons a {
             margin: 0 10px;
@@ -172,7 +198,7 @@
 <body>
     <!-- Sticky Header -->
     <header class="header sticky-top">
-        <div class="container">
+        <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <img src="../images/Modest logo2.png" alt="Exquisite Jewels Logo" class="logo">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

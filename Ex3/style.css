@@ -84,7 +84,7 @@ h1 {
     font-size: large;
     padding: 10px 20px;
     background-color: #FFD0EC; /* Light pink background */
-    color: #1F2544; /* Dark blue text */
+    color: #FFD0EC; /* Dark blue text */
     border: none;
     border-radius: 5px;
     cursor: pointer;
