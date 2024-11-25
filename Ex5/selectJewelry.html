@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Favorite Jewelry</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        form {
+            display: inline-block;
+            padding: 30px;
+            border: 2px solid #ffffff;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        select, button {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        select {
+            background-color: #ffffff;
+            color: #333;
+        }
+        button {
+            background-color: #8e44ad;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #9b59b6;
+        }
+    </style>
+</head>
+<body>
+    <h1>Choose Your Favorite Jewelry</h1>
+    <form action="JewelryServlet" method="POST">
+        <label for="jewelry">Select Jewelry:</label>
+        <select name="jewelry" id="jewelry" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="Radiant Ruby">Radiant Ruby</option>
+            <option value="Majestic Sapphire">Majestic Sapphire</option>
+            <option value="Elegant Emerald">Elegant Emerald</option>
+            <option value="Timeless Diamond">Timeless Diamond</option>
+        </select>
+        <input type="hidden" name="extraData" value="Additional hidden information">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

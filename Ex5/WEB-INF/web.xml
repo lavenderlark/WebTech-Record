@@ -1,0 +1,79 @@
+<web-app>
+<servlet>
+<servlet-name>HelloWord</servlet-name>
+<servlet-class>HelloWorld</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>HelloWord</servlet-name>
+<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+ <!-- Program p12_db1.java -->
+    <servlet>
+        <servlet-name>p12_db1</servlet-name>
+        <servlet-class>p12_db1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db1</servlet-name>
+        <url-pattern>/db1</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p12_db2.java -->
+    <servlet>
+        <servlet-name>p12_db2</servlet-name>
+        <servlet-class>p12_db2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db2</servlet-name>
+        <url-pattern>/db2</url-pattern>
+    </servlet-mapping>
+
+    <!-- Program p12_db3.java -->
+    <servlet>
+        <servlet-name>p12_db3</servlet-name>
+        <servlet-class>p12_db3</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>p12_db3</servlet-name>
+        <url-pattern>/db3</url-pattern>
+    </servlet-mapping>
+  <!-- Ex 5.b-->
+      <servlet>
+        <servlet-name>JewelryQuizServlet</servlet-name>
+        <servlet-class>JewelryQuizServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>JewelryQuizServlet</servlet-name>
+        <url-pattern>/JewelryQuizServlet</url-pattern>
+    </servlet-mapping>
+  <!-- Ex 5.c--> 
+    <servlet>
+        <servlet-name>JewelryServlet</servlet-name>
+        <servlet-class>JewelryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JewelryServlet</servlet-name>
+        <url-pattern>/JewelryServlet</url-pattern>
+    </servlet-mapping>
+   <!--Ex 5.e-->
+    <servlet>
+        <servlet-name>LoginCounterServlet</servlet-name>
+        <servlet-class>LoginCounterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginCounterServlet</servlet-name>
+        <url-pattern>/LoginCounterServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

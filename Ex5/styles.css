@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #1F2544;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+h3, h4 {
+    color: #FFD0EC;
+}
+
+form {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"] {
+    margin: 5px;
+    accent-color: #1F2544;
+}
+
+input[type="submit"] {
+    background-color: #1F2544;
+    color: #FFD0EC;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #FFD0EC;
+    color: #1F2544;
+}
+
+.recommendation {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #1F2544;
+    border-radius: 8px;
+}
+
+.gem {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gem.red {
+    background-color: red;
+}
+
+.gem.blue {
+    background-color: blue;
+}
+
+.gem.green {
+    background-color: green;
+}
+
+.gem.purple {
+    background-color: purple;
+}
+
+.gem.white {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: #1F2544;
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+a:hover {
+    text-decoration: underline;
+}

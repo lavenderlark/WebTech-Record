@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Personality Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Jewelry Personality Quiz</h1>
+    <form id="surveyForm" action=" JewelryQuizServlet" method="POST">
+        <!-- Question 1 -->
+        <fieldset id="question1">
+            <legend><strong>1. Which word best describes your personality?</strong></legend>
+            <label><input type="radio" name="personality" value="adventurous" required> Adventurous</label><br>
+            <label><input type="radio" name="personality" value="elegant"> Elegant</label><br>
+            <label><input type="radio" name="personality" value="creative"> Creative</label><br>
+            <label><input type="radio" name="personality" value="sophisticated"> Sophisticated</label><br>
+            <label><input type="radio" name="personality" value="dynamic"> Dynamic</label><br>
+        </fieldset>
+        
+        <!-- Question 2 -->
+        <fieldset id="question2" style="display:none;">
+            <legend><strong>2. What's your favorite color?</strong></legend>
+            <label><input type="radio" name="color" value="red" required> Deep Ruby Red</label><br>
+            <label><input type="radio" name="color" value="blue"> Majestic Sapphire Blue</label><br>
+            <label><input type="radio" name="color" value="green"> Serene Jade Green</label><br>
+            <label><input type="radio" name="color" value="purple"> Regal Amethyst Purple</label><br>
+            <label><input type="radio" name="color" value="white"> Timeless Diamond White</label><br>
+        </fieldset>
+
+        <!-- Question 3 -->
+        <fieldset id="question3" style="display:none;">
+            <legend><strong>3. When it comes to jewelry, which style excites you the most?</strong></legend>
+            <label><input type="radio" name="jewelry" value="rings" required> Bold Rings</label><br>
+            <label><input type="radio" name="jewelry" value="necklaces"> Exquisite Necklaces</label><br>
+            <label><input type="radio" name="jewelry" value="earrings"> Elegant Earrings</label><br>
+            <label><input type="radio" name="jewelry" value="bracelets"> Chic Bracelets</label><br>
+        </fieldset>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Get My Recommendation">
+    </form>
+
+    <script>
+        const surveyForm = document.getElementById('surveyForm');
+
+        // Show next question based on previous answer
+        surveyForm.addEventListener('change', function (e) {
+            if (e.target.name === 'personality') {
+                document.getElementById('question2').style.display = 'block';
+            } else if (e.target.name === 'color') {
+                document.getElementById('question3').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
