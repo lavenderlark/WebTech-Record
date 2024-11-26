@@ -58,6 +58,16 @@
         <servlet-name>JewelryServlet</servlet-name>
         <url-pattern>/JewelryServlet</url-pattern>
     </servlet-mapping>
+
+    <!--Ex 5.d-->
+    <servlet>
+        <servlet-name>JewelryDBServlet</servlet-name>
+        <servlet-class>JewelryDBServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>JewelryDBServlet</servlet-name>
+        <url-pattern>/JewelryDBServlet</url-pattern>
+    </servlet-mapping>
    <!--Ex 5.e-->
     <servlet>
         <servlet-name>LoginCounterServlet</servlet-name>
