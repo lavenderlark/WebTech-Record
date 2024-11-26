@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jewelryCollection>
+    <jewelry>
+        <name>Diamond Necklace</name>
+        <type>Necklace</type>
+        <price>2000.00</price>
+        <description>A beautiful diamond necklace with intricate design.</description>
+    </jewelry>
+    <jewelry>
+        <name>Gold Ring</name>
+        <type>Ring</type>
+        <price>500.00</price>
+        <description>A classic gold ring perfect for any occasion.</description>
+    </jewelry>
+    <jewelry>
+        <name>Emerald Earrings</name>
+        <type>Earrings</type>
+        <price>750.00</price>
+        <description>Stunning emerald earrings that sparkle with every movement.</description>
+    </jewelry>
+</jewelryCollection>

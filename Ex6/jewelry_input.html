@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Collection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #5a1d52;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #8e44ad;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #a569bd;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+            width: 80%;
+            background: rgba(255, 255, 255, 0.1);
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid white;
+            color: white;
+        }
+        th {
+            background-color: #8e44ad;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jewelry Collection</h1>
+    <form action="jewelry_handler.php" method="POST">
+        <input type="text" name="name" placeholder="Jewelry Name" required>
+        <input type="text" name="type" placeholder="Type (e.g., Necklace, Ring)" required>
+        <input type="number" step="0.01" name="price" placeholder="Price (USD)" required>
+        <textarea name="description" placeholder="Description" rows="4"></textarea>
+        <button type="submit">Add Jewelry</button>
+    </form>
+</body>
+</html>

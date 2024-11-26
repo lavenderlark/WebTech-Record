@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Inventory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca, #aa8fd8);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #5a1d52;
+        }
+        form {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input, select, textarea {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        button {
+            background-color: #8e44ad;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #a569bd;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ffffff;
+            text-align: left;
+        }
+        th {
+            background-color: #5a1d52;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jewelry Inventory Management</h1>
+    <form action="jewelry.php" method="POST">
+        <input type="text" name="name" placeholder="Jewelry Name" required>
+        <select name="type" required>
+            <option value="" disabled selected>Select Jewelry Type</option>
+            <option value="Ring">Ring</option>
+            <option value="Necklace">Necklace</option>
+            <option value="Bracelet">Bracelet</option>
+            <option value="Earrings">Earrings</option>
+        </select>
+        <input type="number" name="price" placeholder="Price (in USD)" step="0.01" required>
+        <textarea name="description" placeholder="Description" rows="3"></textarea>
+        <button type="submit">Add Jewelry</button>
+    </form>
+
+    <h2>Available Jewelry</h2>
+    <?php include 'jewelry.php'; ?>
+</body>
+</html>
